@@ -1,0 +1,85 @@
+.hx-border {
+  height: 34px;
+  display: flex;
+  overflow: hidden;
+  cursor: pointer;
+  > div,
+  > div > div {
+    flex-grow: 1;
+    transition: all .3s;
+    min-width: 80px;
+    outline: 1px solid #33383a;
+  }
+  > div {
+    margin: 1px;
+    overflow: hidden;
+    transform: rotate(45deg);
+  }
+  > div > div {
+    line-height: 32px;
+    transform: rotate(-45deg);
+  }
+}
+
+.hx-border:hover {
+  > div > div,
+  > div {
+    outline: 1px solid #1890ff;
+  }
+}
+
+.hx-border-primary {
+  > div,
+  > div > div {
+    outline: 1px solid #1890ff;
+  }
+}
+
+.hx-border-primary:hover, .hx-border-primary:focus {
+  > div,
+  > div > div {
+    outline: 1px solid #40a9ff;
+  }
+}
+
+.hx-border-dashed {
+  > div,
+  > div > div {
+    outline: 1px dashed #33383a;
+  }
+}
+
+.hx-border-dashed:hover, .hx-border-dashed:focus {
+  > div,
+  > div > div {
+    outline: 1px dashed #40a9ff;
+  }
+}
+
+.hx-border-danger {
+  > div,
+  > div > div {
+    outline: 1px solid #ff4d4f;
+  }
+}
+
+.hx-border-danger:hover, .hx-border-danger:focus {
+  > div,
+  > div > div {
+    outline: 1px solid #ff7875;
+  }
+}
+
+.hx-border-link {
+  > div,
+  > div > div {
+    outline: 1px solid transparent;
+  }
+}
+
+.hx-border-link:hover, .hx-border-link:focus {
+  > div,
+  > div > div {
+    outline: 1px solid transparent;
+  }
+}
