@@ -6,7 +6,7 @@
   > div,
   > div > div {
     flex-grow: 1;
-    transition: all .3s;
+    transition: all 0.3s;
     min-width: 80px;
     outline: 1px solid #33383a;
   }
@@ -35,7 +35,8 @@
   }
 }
 
-.hx-border-primary:hover, .hx-border-primary:focus {
+.hx-border-primary:hover,
+.hx-border-primary:focus {
   > div,
   > div > div {
     outline: 1px solid #40a9ff;
@@ -49,7 +50,8 @@
   }
 }
 
-.hx-border-dashed:hover, .hx-border-dashed:focus {
+.hx-border-dashed:hover,
+.hx-border-dashed:focus {
   > div,
   > div > div {
     outline: 1px dashed #40a9ff;
@@ -63,7 +65,8 @@
   }
 }
 
-.hx-border-danger:hover, .hx-border-danger:focus {
+.hx-border-danger:hover,
+.hx-border-danger:focus {
   > div,
   > div > div {
     outline: 1px solid #ff7875;
@@ -77,7 +80,8 @@
   }
 }
 
-.hx-border-link:hover, .hx-border-link:focus {
+.hx-border-link:hover,
+.hx-border-link:focus {
   > div,
   > div > div {
     outline: 1px solid transparent;

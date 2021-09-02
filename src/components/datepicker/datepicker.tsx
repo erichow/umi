@@ -1,5 +1,6 @@
 import React from "react";
 import antd from "antd";
+import _ from "lodash";
 import classNames from "classnames";
 import Border from "../border";
 import "./index.scss";
@@ -11,15 +12,16 @@ function DatePicker(props: any) {
     props.className
   );
 
+  _.omit(props, ["corner"]);
   return (
     <div className={className}>
       <Border corner={props.corner}>
         <antd.DatePicker
-          {...props}
+          showToday={false}
           bordered={false}
           allowClear={false}
           inputReadOnly={true}
-          style={{ width: "180px" }}
+          {...props}
         />
       </Border>
     </div>

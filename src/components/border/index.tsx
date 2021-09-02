@@ -10,7 +10,7 @@ function Border(props: { type: String; className: String; corner: Number }) {
     const h = borderRef.current.offsetHeight;
     const w = borderRef.current.offsetWidth;
     borderRef.current.style.height =
-      (w + h) / Math.sqrt(2) - (props.corner || 0) + "px";
+      (w + h) / Math.sqrt(2) - (props.corner || -5) + "px";
   }, []);
 
   const borderRef = React.useRef(null);

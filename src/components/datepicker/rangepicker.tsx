@@ -32,6 +32,7 @@ function RangePicker(props: any) {
           inputReadOnly={true}
           suffixIcon={<SwapRightOutlined />}
           allowClear={false}
+          showToday={false}
         />
         <DatePicker
           ref={endRef}
@@ -41,6 +42,7 @@ function RangePicker(props: any) {
           bordered={false}
           inputReadOnly={true}
           allowClear={false}
+          showToday={false}
           style={{ marginLeft: "-11px" }}
         />
       </Border>
